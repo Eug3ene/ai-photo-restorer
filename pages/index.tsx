@@ -5,7 +5,6 @@ import Link from "next/link";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import SquigglyLines from "../components/SquigglyLines";
-import { Testimonials } from "../components/Testimonials";
 
 const Home: NextPage = () => {
   return (
@@ -16,15 +15,6 @@ const Home: NextPage = () => {
 
       <Header />
       <main className="flex flex-1 w-full flex-col items-center justify-center text-center px-4 sm:mt-28 mt-20">
-        <a
-          href="https://twitter.com/nutlope/status/1620493265865957376"
-          target="_blank"
-          rel="noreferrer"
-          className="border rounded-2xl py-1 px-4 text-slate-500 text-sm mb-5 hover:scale-105 transition duration-300 ease-in-out"
-        >
-          Used by over <span className="font-semibold">100,000</span> happy
-          customers
-        </a>
         <h1 className="mx-auto max-w-4xl font-display text-5xl font-bold tracking-normal text-slate-900 sm:text-7xl">
           Restoring old photos{" "}
           <span className="relative whitespace-nowrap text-[#3290EE]">
@@ -39,15 +29,6 @@ const Home: NextPage = () => {
           memories can live on. 100% free – restore your photos today.
         </p>
         <div className="flex justify-center space-x-4">
-          <a
-            className="bg-white rounded-xl text-black font-medium px-4 py-3 sm:mt-10 mt-8 hover:bg-gray-100 border"
-            href="https://youtu.be/FRQtFDDrUXQ"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Learn how it's built
-          </a>
-
           <Link
             className="bg-black rounded-xl text-white font-medium px-4 py-3 sm:mt-10 mt-8 hover:bg-black/80"
             href="/restore"
@@ -82,7 +63,6 @@ const Home: NextPage = () => {
           </div>
         </div>
       </main>
-      <Testimonials />
       <Footer />
     </div>
   );
